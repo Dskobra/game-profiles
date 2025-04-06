@@ -1,0 +1,14 @@
+custom.conf
+install.sh
+log.txt
+MangoHud.conf
+pci.py
+README.md
+wine-Diablo IV.conf
+wine-ffxiv_dx11.conf
+wine-Gw2-64.conf
+wine-NewWorld.conf
+wine-RuneScape.conf
+wine-Stardew Valley.conf
+wine-WorldOfTanks.conf
+wine-WoW.conf
