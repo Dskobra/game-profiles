@@ -136,6 +136,23 @@ def configure_wow_config():
       file.write(filedata)
 
 
+def configure_anno_config():
+    oldFile = "wine-Anno1800.conf"
+    newFile = "wine-Anno1800.conf"
+
+    # Read in the file
+    with open(oldFile, 'r') as file:
+        filedata = file.read()
+
+    # Replace 'user' text with username
+    filedata = filedata.replace('INSERT_PCI_DEVICE', pci_device)
+
+    # Write the new file
+    with open(newFile, 'w') as file:
+      file.write(filedata)
+
+
+
 pci_device = input("Enter pci device name: ") 
 configure_mangohud_config()
 configure_diablo_config()
@@ -146,3 +163,4 @@ configure_runescape_config()
 configure_stardewvalley_config()
 configure_worldoftanks_config()
 configure_wow_config()
+configure_anno_config()
